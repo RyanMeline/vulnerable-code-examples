@@ -1,10 +1,5 @@
 version: 2
 updates:
-  - package-ecosystem: "nuget"
-    directory: "/sast/csharp"
-    schedule:
-      interval: "weekly"
-
   - package-ecosystem: "maven" # or "gradle"
     directory: "/SCA/java"
     schedule:
@@ -12,23 +7,16 @@ updates:
 
   - package-ecosystem: "npm"
     directories:
-      - "/sast/javascript"
-      - "/sast/typescript"
       - "/SCA/javascript"
     schedule:
       interval: "weekly"
-
-  - package-ecosystem: "composer"
-    directory: "/sast/php"
-    schedule:
-      interval: "weekly"
-
+      
   - package-ecosystem: "pip"
-    directory: "/sca/python"
+    directory: "/SCA/python/requirements.txt"
     schedule:
       interval: "weekly"
 
   - package-ecosystem: "bundler"
-    directory: "/sca/ruby"
+    directory: "/SCA/ruby"
     schedule:
       interval: "weekly"
