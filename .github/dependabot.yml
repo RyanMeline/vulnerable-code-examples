@@ -1,7 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: "maven" # or "gradle"
-    directory: "/SCA/java"
+    directory: "/SCA/java/maven"
     schedule:
       interval: "weekly"
 
@@ -12,7 +12,7 @@ updates:
       interval: "weekly"
       
   - package-ecosystem: "pip"
-    directory: "/SCA/python/requirements.txt"
+    directory: "/SCA/python/"
     schedule:
       interval: "weekly"
 
