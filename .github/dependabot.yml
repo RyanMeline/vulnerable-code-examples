@@ -9,3 +9,38 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+
+  - package-ecosystem: "nuget"
+    directory: "/sast/csharp"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "maven" # or "gradle" — depends on your build tool
+    directory: "/sast/java"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "npm"
+    directory: "/sast/javascript"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "composer"
+    directory: "/sast/php"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "pip"
+    directory: "/sast/python"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "bundler"
+    directory: "/sast/ruby"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "npm"
+    directory: "/sast/typescript"
+    schedule:
+      interval: "weekly"
