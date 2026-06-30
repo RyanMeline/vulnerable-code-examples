@@ -11,14 +11,14 @@ updates:
       interval: "weekly"
 
   - package-ecosystem: "maven" # or "gradle" — depends on your build tool
-    directory: 
+    directories: 
       - "/sast/java"
       - "/SCA/java"
     schedule:
       interval: "weekly"
 
   - package-ecosystem: "npm"
-    directory: 
+    directories: 
       - "/sast/javascript"
       - "/sast/typescript"
       - "/SCA/javascript"
@@ -31,14 +31,14 @@ updates:
       interval: "weekly"
 
   - package-ecosystem: "pip"
-    directory: 
+    directories: 
       - "/sast/python"
       - "/sca/python"
     schedule:
       interval: "weekly"
 
   - package-ecosystem: "bundler"
-    directory: 
+    directories: 
       - "/sast/ruby"
       - "/sca/ruby"
     schedule:
